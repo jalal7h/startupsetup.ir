@@ -1,4 +1,5 @@
 RewriteEngine On
+# AddType application/x-httpd-php54 .php
 
 # 
 # captcha-1
