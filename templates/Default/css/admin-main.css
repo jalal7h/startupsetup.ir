@@ -1,0 +1,135 @@
+
+/*admin*/
+
+* {
+	font-family: BYekan,Tahoma;
+}
+
+.logo-container {
+	width: 80%;
+	margin: 20px auto;
+	height: 66px;
+}
+.logo-container:before {
+	display: block;
+    position: relative;
+    top: -3px;
+    left: 25px;
+    content: "\f213";
+    font-size: 70px;
+    color: #A0A0A3;
+    font-family: FontAwesome;
+}
+
+body{
+	font-size:12px;
+	font-family:Tahoma;
+	color:#6d6d6d;
+	background: #eee !important;
+}
+table{
+	font-family:Tahoma;
+	font-size:12px;
+}
+tr{
+	font-family:Tahoma;
+	font-size:12px;
+}
+td{
+	font-family:Tahoma;
+	font-size:12px;
+}
+hr{
+	size:0px;
+	border:1px dotted #888888;
+	height:0px;
+	padding:0px;
+	margin:0px;
+}
+
+a , a:link , a:visited {
+	color:#777;
+	font-size:12px;
+	font-family:Tahoma;
+	text-decoration:none;
+}
+a:hover {
+	color:#c00;
+}
+
+#dhtmltooltip{
+position: absolute;
+left: -300px;
+width: 150px;
+border: 1px solid black;
+padding: 2px;
+background-color: lightyellow;
+visibility: hidden;
+z-index: 100;
+/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+
+#dhtmlpointer{
+position:absolute;
+left: -300px;
+z-index: 101;
+visibility: hidden;
+}
+
+.adminCpIcons:visited,.adminCpIcons:link{
+	color:black;
+	text-shadow: -1px 0 #ffffbb, 0 1px #ffffbb, 1px 0 #ffffbb, 0 -1px #ffffbb;
+}
+.adminCpIcons:hover{
+	color:#444400;
+	text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+}
+
+
+/*** task *
+.task_notifier{
+	background-color:#eee;
+	color:orange;
+	font:11px tahoma;
+	direction:rtl;
+	height:23px;
+	width:90px;
+	padding-top:5px;
+	padding-bottom:0px;
+	border:1px solid #ccc;
+	float:left;
+	margin-right:10px;
+}
+.task_notifier:hover{
+	background-color:#f4f4f4;
+	color:red;
+	border:1px solid #ddd;
+}
+.task_notifier b{
+	color:red;
+}
+/*********/
+
+/*** admin main *
+#admin_main_panel td{
+	background-repeat:no-repeat; 
+	padding-left:10px;
+	padding-right:10px;
+}
+#admin_main_panel td a{
+	font-weight:normal;
+	color:black;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+#admin_main_panel td span{
+	position:relative;
+	top:-30px;
+}
+#admin_main_panel td a:hover{
+	color:white;
+	font-weight:bold;
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+/*********/
+

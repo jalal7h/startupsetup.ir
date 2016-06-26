@@ -1,0 +1,38 @@
+
+#offer_new_item {
+	cursor: pointer;
+}
+
+#offer_new_item_hitbox {
+	text-align: center;
+	direction: rtl;
+	box-sizing: border-box;
+	/* width: 95%; */
+	/* margin: auto; */
+	/* background-color: #eee; */
+}
+#offer_new_item_hitbox * {
+	box-sizing: border-box;
+}
+
+#offer_new_item_hitbox img {
+	width: 140px;
+	margin: 50px 0 40px 0;
+}
+
+#offer_new_item_hitbox span {
+	display: block;
+	font: normal 14px IRANSans;
+	margin: 10px 40px 20px 40px;
+}
+
+#offer_new_item_hitbox a {
+	display: block;
+	margin: 30px 0;
+	border: 0px;
+	color: white;
+}
+
+
+
+

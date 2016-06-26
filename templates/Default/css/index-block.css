@@ -1,0 +1,37 @@
+
+/*index*/
+
+main.index .block {
+	width:100%;
+	text-align: justify;
+}
+
+main.index .block > .blockhead {
+	display: none;
+	font-family: IRANSans;
+}
+
+main.index .block > .blocktext {
+	color: #fff;
+	text-align: justify;
+	direction: rtl;
+	font-family: IRANSans;
+}
+
+main.index .block * {
+	line-height: 20px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

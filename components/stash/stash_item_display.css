@@ -1,0 +1,112 @@
+
+.stash_item_display {
+	width: 100%;
+	background-color: white;
+	border-radius: 20px;
+	padding: 0 0 50px 0;
+}
+.stash_item_display img.screenshot {
+	width: 100%;
+	/*box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);*/
+	/*border-bottom: 1px dashed #fff;*/
+	border-radius: 15px 15px 0 0;
+	position: relative; 
+	/*z-index: 99;*/
+}
+
+.stash_item_display .under-screenshot {
+	position: relative; 
+	/*right: 60px;*/
+	/*top: -60px;*/
+	z-index: 100;
+	margin: -60px 40px 0 0;
+}
+.stash_item_display .under-screenshot > * {
+	position: relative; 
+	display: inline-block;
+}
+
+.stash_item_display .icon-container {
+	background-color: white;
+	display: inline-block;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	position: relative; z-index: 100;
+}
+.stash_item_display .icon-container > img.icon {
+	width: 120px;
+	height: 120px;
+	border-radius: 5px;
+}
+
+/* upvote */
+.stash_item_display .under-screenshot .upvote_form {
+	right: 11px;
+	top: -25px;
+	font-size: 16px;
+	direction: ltr;
+	font-family: monospace;
+	padding: 0 10px 1px 10px;
+	border-radius: 5px;
+	transition: all 0.1s;
+	color: #777;
+	background-color: white;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	opacity: 0.9;
+}
+.stash_item_display .under-screenshot .upvote_form icon:before {
+	display: inline-block;
+	top: 2px;
+	right: 0px;
+	font-size: 24px;
+	line-height: 20px;
+}
+.stash_item_display .under-screenshot .upvote_form > div {
+	display: inline-block;
+}
+.stash_item_display .under-screenshot .upvote_form:hover {
+	color: black;
+	opacity: 1.0;
+}
+
+/* website */
+.stash_item_display .website {
+	right: 11px;
+	top: -27px;
+	direction: rtl;
+     margin-right: 10px; 
+    line-height: 24px !important;
+    font-size: 12px;
+    direction: ltr;
+    font-family: IRANSans;
+    padding: 0 15px 1px 13px;
+    border-radius: 5px;
+    transition: all 0.1s;
+    color: #777;
+    background-color: white;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	opacity: 0.9;;
+}
+.stash_item_display .website:before {
+    content: "\f0c1";
+    font-family: FontAwesome;
+    font-size: 14px;
+    position: relative;
+    margin: 0px 7px 0 0;
+    top: 3px;
+}
+.stash_item_display .website:hover {
+	color: black;
+	opacity: 1.0;
+}
+
+.stash_item_display .info {
+	text-align: center;
+}
+.stash_item_display .info > div {
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+}

@@ -1,0 +1,46 @@
+
+/*index*/
+
+#hml_plus {
+	padding: 10px 10px 8px 14px;
+	background-color: rgba(255,255,255, 0.2);
+	border-radius: 15px;
+	color: white;
+	font: normal 11px IRANSans;
+	cursor: pointer;
+	width: auto;
+	border: 0px;
+
+	top: 30px;
+	left: 30px;
+	position: absolute;
+
+	border-radius: 50px;
+}
+#hml_plus:hover {
+	background-color: rgba(255,255,255, 0.3);
+}
+#hml_plus icon:before {
+	content: "\f067";
+	font-size: 14px;
+}
+#hml_plus span {
+	display: inline-block;
+	position: relative; top: 1px; right: 0px;
+	padding-left: 0px;
+
+	opacity: 0.0;
+	width: 0px;
+	overflow: hidden;
+	height: 16px;
+	
+	transition: all 0.5s;
+}
+#hml_plus:hover span {
+	opacity: 1.0;
+	width: 170px;
+	padding: 0 10px 0 20px;
+}
+
+
+

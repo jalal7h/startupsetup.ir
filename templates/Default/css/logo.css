@@ -1,0 +1,13 @@
+
+.logo-c {
+	text-align: center;
+	margin: 60px auto;
+}
+a.logo {
+	display: inline-block;
+	text-align: center;
+}
+a.logo img {
+	width: 50%;
+}
+

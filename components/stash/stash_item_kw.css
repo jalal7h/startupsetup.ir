@@ -1,0 +1,17 @@
+
+.stash_item_kw {
+	margin: 5px 0;
+}
+.stash_item_kw > a {
+	padding: 5px 8px;
+	background-color: #f4f4f4;
+	color: #666;
+	margin: 0 0 0 4px;
+	border-radius: 4px;
+	line-height: 35px !important;
+	font-size: 11px;
+}
+.stash_item_kw > a:hover {
+	/*background-color: #ddd;*/
+	color: black;
+}

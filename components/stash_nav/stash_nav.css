@@ -1,0 +1,114 @@
+
+.stash_nav_wrapper {
+	position: fixed; left: 0px; top: 0px;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	height: 100%;
+}
+
+.stash_nav {
+	display: inline-block;
+	margin: 0;
+	width: 0px;
+	height: 100%;
+	overflow-x: hidden;
+	transition: width 0.5s;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.stash_nav .container {
+	width: 220px;
+	min-height: 100%;
+	padding: 15px;
+	margin: 0;
+	background-color: #000;
+	color: white;
+}
+#stash_nav_3l {
+	display: inline-block;
+	width: 40px;
+	margin: 4px;
+	position: absolute; top: 8px; right: -63px; z-index: 118;
+	cursor: pointer;
+	opacity: 0.6;
+	transition: all 0.1s;
+	transition: background-color 4s;
+	padding: 5px;
+	border-radius: 10px;
+}
+#stash_nav_3l:hover {
+	opacity: 1.0;
+	width: 44px;
+	margin: 2px 2px 2px 0;
+}
+
+.stash_nav div.logo {
+	text-align: center;
+}
+.stash_nav div.logo img {
+	width: 50%;
+	margin: 20px auto 40px auto;
+}
+
+.stash_nav .social_head {
+	margin-bottom: 5px;
+}
+
+.stash_nav::-webkit-scrollbar-track {
+	background: black;
+}
+.stash_nav::-webkit-scrollbar {
+	width: 3px;
+}
+.stash_nav::-webkit-scrollbar-thumb {
+	background: #333;
+	border:0px solid black;
+	border-top:0 solid green;
+	border-bottom:0 solid green;
+}
+
+.stash_nav .seo_share_link {
+	margin-bottom: 40px;
+	text-align: center;
+}
+.stash_nav .seo_share_link > a icon:before {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 15px !important;
+	width: 40px;
+	height: 35px;
+	line-height: 35px !important;
+	border-radius: 4px;
+	border: 1px solid #777;
+	color: #777;
+	background-color: transparent;
+	margin: 4px 1px;
+	text-align: center;
+	transition: all 0.2s;
+}
+.stash_nav .seo_share_link > a.facebook icon:before {
+	/*background-color: #44609D;*/
+}
+.stash_nav .seo_share_link > a.twitter icon:before {
+	/*background-color: #1DA1F2;*/
+}
+.stash_nav .seo_share_link > a.linkedin icon:before {
+	/*background-color: #1D87BD;*/
+}
+.stash_nav .seo_share_link > a.google icon:before {
+	/*background-color: #db4437;*/
+}
+.stash_nav .seo_share_link > a.pinterest icon:before {
+	/*background-color: #bd081c;*/
+}
+.stash_nav .seo_share_link > a.instagram icon:before {
+	/*background-color: #bd081c;*/
+}
+.stash_nav .seo_share_link > a icon:hover:before {
+	color: #fff;
+	border-color: #fff;
+}
+
+
+

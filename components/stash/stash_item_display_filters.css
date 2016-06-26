@@ -1,0 +1,19 @@
+
+#stash_item_display_filters {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+#stash_item_display_filters > * {
+    background-color: #4C4C4C;
+    color: #CCCCCC;
+    margin: 0 2px;
+    padding: 0px 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+#stash_item_display_filters > *:hover {
+	color: white;
+	background-color: #000;
+}
+

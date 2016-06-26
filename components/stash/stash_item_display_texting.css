@@ -1,0 +1,44 @@
+
+.stash_item_display .info .texting {
+	padding: 30px 40px;
+	width: 60%;
+}
+.stash_item_display .info .texting * {
+	font-family: IRANSans;
+	line-height: 2.5 !important;
+}
+.stash_item_display .info .texting .name {
+	font-size: 18px;
+}
+.stash_item_display .info .texting .cat {
+	font-size: 9px;
+	margin-top: -3px;
+	display: block;
+}
+.stash_item_display .info .texting .brief {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px 15px;
+	margin: 10px 0;
+	background-color: #fafafa;
+	border-radius: 20px;
+}
+.stash_item_display .info .texting .desc {
+	font-size: 11px;
+	text-align: justify;
+}
+.stash_item_display .info .texting .stash_item_share {
+	/*position: absolute; bottom: 0px; right: 0px;*/
+	position: relative; top: 20px; left: 2px;
+	text-align: left;
+}
+.stash_item_display .info .texting .useravatar {
+	margin: 20px;
+}
+
+
+
+
+
+
+

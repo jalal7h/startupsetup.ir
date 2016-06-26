@@ -1,0 +1,76 @@
+
+.stash_client_list_wrapper {
+	display: block;
+	padding: 30px;
+	padding-bottom: 40px;
+}
+.stash_client_list_wrapper .head {
+	border-bottom: 1px dashed #ddd;
+	font-weight: bold;
+	font-size: 24px;
+	margin: 0 0 30px 0;
+	padding: 0 0 20px 0;
+}
+
+.stash_client_list_wrapper .listmaker_list_search input {
+	position: absolute; left: 30px; top: 30px;
+}
+
+.stash_client_list {
+	padding: 0 30px;
+}
+
+.stash_client_list tr:nth-child(n+3) {
+	height: 70px;
+	/* background-color: #fff; */
+	border: 1px solid #eee;
+	opacity: 0.8;
+}
+.stash_client_list tr:hover {
+	opacity: 1.0;
+}
+.stash_client_list tr:nth-child(2n+1) {
+	/* background-color: #f8f8f8; */
+}
+.stash_client_list tr td:first-child {
+	width: 70px;
+	text-align: center;
+}
+
+.stash_client_list th {
+	border-radius: 0px;
+	background-color: #f4f4f4;
+	color: #868686;
+}
+
+.stash_client_list td {
+    margin: 5px;
+    box-shadow: 0 0 0 #fff;
+}
+.stash_client_list td:last-child {
+	width: 90px;
+}
+.stash_client_list tr td:last-child {
+	background-color: transparent !important;
+}
+.stash_client_list td:nth-child(3) ,
+.stash_client_list td:nth-child(4) {
+	text-align: center;
+}
+
+.stash_client_list_wrapper .listmaker_list_search input {
+	box-shadow: 0 0 0 #fff;
+	margin: 0px;
+}
+
+.stash_client_list_new {
+	margin: auto;
+	display: block;
+
+}
+.stash_client_list_wrapper .divider {
+	margin-bottom: 40px !important;
+    height: 40px !important;
+}
+
+

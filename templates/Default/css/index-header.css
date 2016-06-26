@@ -1,0 +1,36 @@
+
+/*index*/
+
+main.index > header {
+
+}
+
+#header_social_links {
+	direction: ltr;
+	margin: auto;
+	margin-top: 50px;
+	text-align: center;
+}
+#header_social_links p {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+#header_social_links a {
+    display: inline-block;
+    margin: 0px 2px;
+    padding: 6px 16px 3px 16px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+ 	transition: all 0.2s;
+}
+#header_social_links a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: white !important;
+}
+
+
+
+
+

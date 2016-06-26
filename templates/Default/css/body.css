@@ -1,0 +1,28 @@
+
+/*index*/
+
+body {
+	/* background-color: #BD3559; */
+	transition: all 4s;
+}
+
+.bgSameAsBG,
+.bghSameBG:hover {
+	color: white !important;
+	/* background-color: #BD3559;	 */
+	transition: background-color 4s;
+}
+
+a,
+.clSameAsBG,
+.clhSameBG:hover {
+	color: #BD3559;
+	transition: color 4s;
+}
+
+a,
+.bghSameBG:hover,
+.clhSameBG:hover {
+	transition: all 0.2s;
+}
+

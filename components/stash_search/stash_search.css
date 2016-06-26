@@ -1,0 +1,106 @@
+
+
+.stash_search {
+	display: block;
+}
+
+.stash_search > .head {
+	padding: 30px 30px 60px 30px;
+	position: relative;
+	/* border-bottom: 1px dotted #ccc; */
+}
+.stash_search .head .right {
+	position: relative;
+}
+.stash_search .head .right input {
+	width: 300px;
+	padding: 10px 10px 10px 40px;
+	border-radius: 4px;
+	border: 0;
+	/* box-shadow: 0 0 5px #bbb ; */
+	border: 1px dotted #ccc;
+	font: normal 12px IRANSans;
+}
+.stash_search .head .right icon {
+	position: absolute; right: 268px;
+	top: 2px;
+}
+.stash_search .head .right icon:before {
+	font-family: FontAwesome;
+	content: "\f002";
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.stash_search .head .filters {
+	position: absolute; left: 30px; top: 30px;
+}
+.stash_search .head .filters select {
+	width: auto;
+	margin: 0 20px 0 0 ;
+	border-width: 1px;
+	padding: 10px;
+	height: auto;
+	line-height: 18px;
+	font-family: IRANSans;
+}
+
+.stash_search .list {
+	vertical-align: top;
+	width: calc( 100% - 220px );
+	display: inline-block;
+	border-left: 1px dotted #ccc;
+}
+.stash_search .list .r {
+
+}
+
+.stash_search .cats {
+	vertical-align: top;
+	width: 200px;
+	display: inline-block;
+	margin: 15px 20px 15px 0;
+}
+.stash_search .cats > label {
+	margin: 5px 0 0 5px;
+	padding: 0px;
+	min-width: 46%;
+	display: inline-block;
+}
+.stash_search .cats > label > input {
+	top: auto; right: auto; bottom: auto; left: auto;
+
+}
+.stash_search .cats > label > span {
+	font: normal 8px IRANSans;
+}
+
+.stash_search input[type="submit"] {
+	display: none;
+}
+
+.stash_search .taglist {
+	
+}
+.stash_search .taglist > a {
+	background-color: #444;
+	color: #bbb;
+	padding: 1px 8px 1px 6px;
+	margin: 0px 1px;
+	border-radius: 5px;
+	font: normal 8px IRANSans;
+}
+.stash_search .taglist > a:hover {
+	background-color: #888;
+	color: #fff !important;
+}
+.stash_search .taglist > a:before {
+	font-family: FontAwesome;
+	content: "\f00d";
+	font-size: 12px;
+	position: relative; top: 2px; left: 3px;
+	color: #FF7E7E;
+}
+.stash_search .taglist > a:hover:before {
+	color: #fff;
+}

@@ -1,0 +1,39 @@
+
+/*index*/
+
+main.index {
+	margin: 50px auto 40px auto;
+	direction: rtl;
+	width: 970px;
+	color: white;
+	
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    position: relative; left: 0px; z-index: 2;
+    transition: left 0.5s;
+}
+main.index > div { /*middle*/
+
+}
+
+main.index #popup_newsletter , 
+main.index #popup_social {
+	border-radius: 30px;
+	background-color: rgba(255, 255, 255, 0.15) !important;
+	padding: 15px 40px;
+	font-size: 16px;
+	color: white !important;
+	transition: all 0.2s;
+	margin: 10px auto 20px auto;
+	display: inline-block;
+	margin: 0 5px 30px 5px ;
+}
+main.index #popup_newsletter:hover , 
+main.index #popup_social:hover {
+	background-color: rgba(255, 255, 255, 0.22) !important;
+}

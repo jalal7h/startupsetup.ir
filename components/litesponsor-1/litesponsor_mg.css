@@ -1,0 +1,33 @@
+
+/*admin*/
+
+#litesponsor_mg_form {
+	direction:rtl;
+	margin-top:30px;
+	text-align: right;
+}
+#litesponsor_mg_form > form {
+	display: block;
+	margin: 30px;
+	padding: 10px 0;
+}
+#litesponsor_mg_form > form > div {
+	margin: 10px;
+}
+#litesponsor_mg_form input {
+	/* margin:10px; */
+}
+#litesponsor_mg_form input#sForm_link {
+	font-family: monospace;
+}
+#litesponsor_mg_form input[type=text] ,
+#litesponsor_mg_form input[type=url] {
+	width:300px;
+}
+
+#litesponsor_mg_form div > span.lmft_tis {
+	width: 260px;
+	text-align: left;
+	padding-left: 10px;
+	display: inline-block;
+}

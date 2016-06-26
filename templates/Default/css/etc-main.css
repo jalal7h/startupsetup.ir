@@ -1,0 +1,28 @@
+
+/*index*/
+
+main.etc {
+	margin: 50px auto 40px auto;
+	direction: rtl;
+	width: 970px;
+	color: #444;
+	
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	
+	position: relative; left: 0px; z-index: 2;
+    transition: all 0.5s;
+}
+main.etc > div {
+	border-radius: 15px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	/*padding: 10px;*/
+	background-color: white;
+}
+
+
+

@@ -1,0 +1,105 @@
+
+/*index*/
+
+.useravatar div > * {
+	font-family: IRANSans;
+}
+
+.useravatar div > .name {
+	font-size: 12px !important;
+}
+.useravatar div > div.job ,
+.useravatar div > div.where {
+	font-size: 10px !important;
+}
+
+.fbcm_list div.r div.text {
+	font-family: IRANSans;
+	font-size: 11px;
+	margin-top: 10px;
+}
+.fbcm_list div.r div.links > * {
+	font-family: IRANSans;
+}
+.fbcm_list > div > div.r > .date {
+	font-family: IRANSans;
+}
+
+.users_profile_form {
+	box-shadow: 0 0 0 #fff !important;
+}
+
+.userpanel_desk {
+	border-radius: 10px !important;
+}
+
+.userpanel_menu {
+	border-radius: 10px !important;
+}
+.userpanel_menu .profile_avatar > img {
+    border-width: 0 3px 0 0 !important;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.userpanel_menu > div > a > span {
+	font-family: IRANSans;
+}
+
+.userpanel_menu > div > a:last-child {
+	border-radius: 0 0 10px 10px;
+}
+.userpanel_menu > div > a:last-child:before {
+	border-radius: 0 0 8px 0;
+}
+
+#users_login_form .d01 ,
+#users_login_form .d02 ,
+#users_login_form .d03 ,
+#users_login_form .d04 ,
+
+.users_register_form .d01 ,
+.users_register_form .d02 ,
+.users_register_form .d03 ,
+.users_register_form .d04 ,
+.users_register_form .d05 ,
+
+#users_changepassword_form .d01 ,
+#users_changepassword_form .d02 ,
+
+#users_forgot_form .d01 ,
+#users_forgot_form .d02 ,
+
+.users_profile_form .d01 ,
+
+.submit_button {
+	font-family: IRANSans !important;
+}
+
+#users_login_form .container {
+	width: 540px;
+	margin: auto !important;
+}
+.convbox {
+	font-family: IRANSans;
+}
+
+.users_register_form {
+	/*width: 600px !important;*/
+	margin: 50px auto 80px auto !important;
+}
+
+.users_profile_form * {
+	font-family: IRANSans;
+	/*font-size: 12px !important;*/
+}
+
+#hitbox-text {
+	border-radius: 20px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+
+/*-spi-*/
+
+.setting_management {
+	text-align: right;
+	padding: 40px 60px;
+	display: block;
+	direction: rtl;
+	width: 100%;
+	font-size: 15px;
+}
+.setting_management div {
+	display: inline-block;
+	width: 48%;
+	margin-bottom: 10px;
+}
+.setting_management div span {
+	width: 120px;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 10px;
+}
+.setting_management div input {
+	width: 240px;
+}
+.setting_management div input[type="submit"] {
+	width: auto;
+}
+.setting_management div select {
+	width: 200px;
+}
+.setting_management div textarea {
+	width: 240px;
+	height: 100px;
+	line-height: 20px !important;
+}
+.setting_management .copyright_div {
+	
+}
+.setting_management .submit_div {
+	margin: 40px auto 10px auto;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+.setting_management textarea[name="the_list_of_dynamic_colors"] {
+	direction: ltr;
+	font-family: courier-new;
+}
+
+.setting_management textarea[name="html_extra_tags"] {
+	direction: ltr;
+	font-family: monospace;
+	width: calc( 100% - 218px );
+	height: 150px;
+	resize: vertical;
+}
+
+.setting_management .lmff_span {
+	margin-right: 5px;
+	width: auto !important;
+}
+
+.setting_management .toogle-container {
+	vertical-align: middle;
+	position: relative;
+	padding: 20px 0;
+	border: 1px dashed #bbb;
+	border-width: 1px 0 1px 0;
+	margin: 40px 0 50px 0 !important;
+}
+.setting_management .toogle-container > font {
+	display: inline-block;
+	position: absolute; top: 30px; right: 125px;
+}
+
+
+.setting_management .social-container {
+	width: 100%;
+	display: block;
+	border: 1px dashed #ccc;
+	border-width: 1px 0;
+	padding: 30px 0 20px 0;
+	margin: 15px 0 30px 0;
+}
+.setting_management .social-container input[type="url"] {
+	vertical-align: top;
+	margin: -3px 25px 0 0;
+	width: 425px;
+	font-size: 14px;
+	padding: 8px 15px;
+	border-radius: 10px;
+}
+
+.setting_management span.pixel_help {
+	display: inline-block;
+	position: relative; right: -140px;
+}
+
+
+
+
+
+

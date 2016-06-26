@@ -1,0 +1,20 @@
+
+.stash_nav_cat {
+	color: white;
+}
+.stash_nav .cat_list {
+	margin-bottom: 30px;
+}
+.stash_nav .cat_list > a {
+	color: #777;
+	font: 13px IRANSans;
+	line-height: 32px !important;
+	padding-right: 10px;
+	display: block;
+}
+.stash_nav .cat_list > a:hover {
+	color: white;
+}
+.stash_nav .cat_list > a.current {
+	color: white;
+}

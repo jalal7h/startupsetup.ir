@@ -1,0 +1,237 @@
+
+/*index*/
+
+footer {
+	display: block;
+	color: white;
+	padding: 0;
+	width: 100%;
+    margin: 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+footer > .dark {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* sponsors * * * * * * * * * */
+footer .copyright {
+    font-family: 'Raleway', sans-serif, monospace;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+}
+
+/* sponsors * * * * * * * * * */
+footer .sponsors {
+    text-align: center;
+    margin: auto;
+    padding: 80px 0 80px 0;
+    width: 80%;
+}
+footer .sponsors > a {
+    margin: 0 10px;
+}
+footer .sponsors > a > img {
+    height: 40px;
+}
+
+
+
+
+
+/* middle * * * * * * * * * */
+footer .middle {
+    background-color: rgba(0, 0, 0, 0.05);
+    direction: rtl;
+}
+footer .middle > .container {
+    width: 970px;
+    margin: 0 auto;
+}
+footer .middle > .container > div {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+footer .middle > .container > .social {
+    margin: 40px 0;
+}
+footer .middle > .container > .social .logo {
+    height: 36px;
+}
+footer .middle > .container > .social .text {
+    margin: 30px 3px 10px 0;
+    font: normal 12px IRANSans;
+    color: rgba( 255,255,255 , 0.8 );
+}
+footer .middle > .container > .social .social_links {
+    display: inline-block;
+    /* background-color: rgba(0,0,0, 0.03 ); */
+    /* box-shadow: 0 0 10px rgba( 0, 0, 0, 0.09 ) inset; */
+    border-radius: 8px;
+    padding: 8px;
+}
+footer .middle > .container > .social .social_links icon:before {
+    display: inline-block;
+    color: white;
+    border-radius: 4px;
+    font-size: 22px;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 40px !important;
+    margin: 0 3px 0 3px;
+    /*box-shadow: 0 0 1px rgba(255,255,255, 0.4) inset;*/
+}
+footer .middle > .container > .social .social_links icon:hover:before {
+    /* box-shadow: 0 0 1px rgba(255,255,255, 1) inset; */
+}
+footer .middle > .container > .social .facebook:before {
+    content: "\f09a";
+    /* background-color: #44609D; */
+}
+footer .middle > .container > .social .twitter:before {
+    content: "\f099";
+    /* background-color: #1DA1F2; */
+}
+footer .middle > .container > .social .linkedin:before {
+    content: "\f0e1";
+    /* background-color: #1D87BD; */
+}
+footer .middle > .container > .social .google:before {
+    content: "\f0d5";
+    /* background-color: #295A82; */
+}
+
+footer .middle > .container > .social .facebook:hover:before {
+    content: "\f09a";
+    background-color: #44609D;
+}
+footer .middle > .container > .social .twitter:hover:before {
+    content: "\f099";
+    background-color: #1DA1F2;
+}
+footer .middle > .container > .social .linkedin:hover:before {
+    content: "\f0e1";
+    background-color: #1D87BD;
+}
+footer .middle > .container > .social .google:hover:before {
+    background-color: #DA2713;
+}
+
+
+
+footer .middle > .container > .plus {
+    margin: 45px 0 30px 0;
+    text-align: center;
+}
+footer .middle > .container > .plus .text1 {
+    font: normal 16px IRANSans;
+    color: rgba( 255,255,255 , 0.8 );
+}
+footer .middle > .container > .plus .text2 {
+    font: normal 11px IRANSans;
+    margin: 17px auto 0 auto;
+    text-align: justify;
+    display: inline-block;
+    line-height: 22px !important;
+    color: rgba( 255,255,255 , 0.8 );
+}
+footer .middle > .container > .plus .button:before {
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 5px 50px;
+    font-size: 20px;
+    color: white;
+    transition: all 0.2s;
+    margin: 10px auto 0 auto;
+    display: inline-block;
+    content: "\f067";
+    cursor: pointer;
+}
+footer .middle > .container > .plus .button:hover:before {
+    background-color: rgba(255, 255, 255, 0.22);
+    padding: 5px 70px;
+}
+
+footer .middle > .container .linkify_simple {
+    margin: 40px 0 0 20px;
+    width: auto;
+    float: left;
+}
+footer .middle > .container .linkify_simple > a {
+    display: block;
+    color: rgba( 255,255,255 , 0.8 );
+    font: normal 11px IRANSans;
+    line-height: 22px !important;
+    transition: all 0.3s;
+}
+footer .middle > .container .linkify_simple > a:before {
+    content: "-";
+    color: rgba(255,255,255,0);
+    position: relative; right: -8px;
+    display: inline-block;
+}
+footer .middle > .container .linkify_simple > a:hover {
+    color: white !important;
+}
+footer .middle > .container .linkify_simple > a:hover:before {
+    color: rgba(255,255,255, 0.6 );
+}
+
+
+
+
+/* light * * * * * * * * * */
+footer .light {
+    width: 970px;
+    padding: 30px 0;
+    margin: 0 auto;
+    position: relative;
+    /*height: 100px;*/
+    vertical-align: top;
+}
+
+/* copyright * * * * * * * * * */
+footer .light .cr {
+    display: block;
+    /* width: 290px; */
+    text-align: center;
+    /* position: absolute; left: 0px; top: 23px; */
+    font-family: Raleway;
+    vertical-align: top;
+    color: rgba(255, 255, 255, 0.7);
+}
+footer .light .cr a {
+    font-family: Raleway;
+    color: rgba(255, 255, 255, 0.7);
+}
+footer .light .cr a:hover {
+    color: rgba(255, 255, 255, 1.0) !important;    
+}
+
+/* links * * * * * * * * * */
+footer .links {
+    position: absolute; right: 0px; top: 23px;
+    text-align: right;
+    vertical-align: top;
+}
+footer .links > a {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 10px;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+}
+footer .links > a:hover {
+    color: rgba(255, 255, 255, 1.0) !important;
+}
+
+
+

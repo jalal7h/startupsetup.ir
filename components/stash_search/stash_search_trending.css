@@ -1,0 +1,22 @@
+
+.stash_search .trending {
+	margin: 0px;
+	padding-right: 30px;
+	border-bottom: 1px dotted #ccc;
+}
+.stash_search .trending > * {
+	font: normal 10px IRANSans;
+	display: inline-block;
+	padding: 10px;
+	margin-left: 3px;
+	cursor: pointer;
+	position: relative; bottom: -1px;
+}
+.stash_search .trending > *.cur {
+	border: 1px dotted #ccc;
+	border-bottom: 1px solid white;
+	border-radius: 10px 10px 0 0;
+}
+.stash_search .trending > *:hover {
+	
+}

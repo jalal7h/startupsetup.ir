@@ -1,0 +1,60 @@
+
+/*index*/
+
+main.etc .layout {
+	width:100%;
+	/*float:left;*/
+	/*border:1px solid #eee;*/
+	/*margin: 4px 0;*/
+	background: white;
+	/*box-shadow: 0 0 10px #ccc;*/
+	text-align: justify;
+	border-radius: 10px;
+	direction: rtl;
+}
+
+main.etc .layout > .layouthead {
+	background-color: #f8f8f8;
+	color: #666;
+	padding: 10px 0 10px 0;
+	text-indent: 18px;
+	cursor: default;
+	font: bold 13px IRANSans;
+	text-align: right;
+	border-bottom: 1px dashed #eee;
+	border-radius: 7px 7px 0 0;
+}
+main.etc .layout > .layouthead:before {
+	/*content:":: ";*/
+}
+
+main.etc .layout > .layouttext {
+	color: #444;
+	text-align: justify;
+	padding: 23px 20px 20px 20px;
+	font-family: IRANSans;
+}
+main.etc .layout > .layouttext * {
+	
+}
+main.etc .layout .layoutfooter {
+	
+}
+
+main.etc .layout * {
+	line-height: 20px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

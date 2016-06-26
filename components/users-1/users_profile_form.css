@@ -1,0 +1,51 @@
+
+/*-spi-*/
+
+.users_profile_form {
+	margin: auto;
+	display: block;
+	padding-right: 8%;
+	padding: 5%;
+	margin-bottom: 30px;
+	/*background-color: white;*/
+	/*border-radius: 4px;*/
+	/*box-shadow: 0 0 10px #ccc;*/
+}
+.users_profile_form * {
+	/*font-size: 18px !important;*/
+}
+.users_profile_form > div {
+	margin: 5px 0;
+}
+.users_profile_form > div > span {
+	display: inline-block;
+	width: 120px;
+	text-align: left;
+	margin-left: 25px;
+}
+.users_profile_form input {
+	width: 60%;
+}	
+.users_profile_form > div.divider {
+	margin: 0 0 20px 0;
+	width: 100%;
+}
+
+.users_profile_form #inDiv_users_profile_form_username > input ,
+.users_profile_form #inDiv_users_profile_form_tell > input ,
+.users_profile_form #inDiv_users_profile_form_cell > input {
+	direction: ltr;
+	font-family: monospace,'courier new',tahoma;
+}
+
+.users_profile_form .d01 {
+	margin: 20px 143px 40px 0;
+    font: bold 30px Tahoma;
+    color: #666;
+}
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+
+.stash_item_list {
+	position: relative;
+	padding-bottom: 20px;
+}
+.stash_item_list .listmaker_list_paging {
+	margin-top: 20px;
+}
+.stash_item_list .listmaker_list_paging > * {
+	border-radius: 5px;
+}
+
+.stash_item_list .cat-info {
+	border-bottom: 1px dashed #ddd;
+	background-color: #f8f8f8;
+	border-radius: 10px 10px 0 0;
+	padding: 25px 25px 0 0;
+	height: 112px;
+	margin-bottom: 20px;
+}
+
+.stash_item_list .logo-container {
+	/*background-color: #f4f4f4;*/
+    /*box-shadow: 0 0 50px rgba(0, 0, 0, 0.1) inset;*/
+    padding: 5px;
+    display: inline-block;
+    border-radius: 12px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.stash_item_list .logo-container img {
+	width: 60px;
+	height: 60px;
+}
+.stash_item_list .cat-info .head {
+	font: normal 18px IRANSans;
+	padding-bottom: 10px;
+	text-shadow: 1px 1px 0px #fff;
+}
+.stash_item_list .cat-info .desc {
+	font: normal 10px IRANSans;
+	text-shadow: 1px 1px 0px #fff;
+}
+
+.stash_item_list .r {
+	padding: 25px 20px 25px 20px;
+	position: relative;
+}
+.stash_item_list .r:hover {
+	background-color: #f9f9f9;
+}
+.stash_item_list .r > div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.stash_item_list .r .logo {
+	width: 100px;
+	height: 100px;
+	margin: 15px 20px 0 20px;
+}
+.stash_item_list .r > .info {
+	margin-right: -190px;
+    padding-right: 190px;
+    margin-left: -22px;
+    padding-left: 60px;
+	width: 100%;
+}
+.stash_item_list .r > .info > .head {
+	font: normal 15px IRANSans; 
+}
+.stash_item_list .r > .info > .desc {
+	font: normal 10px IRANSans; 
+	padding: 10px 0;
+	text-align: justify;
+	color: #808080;
+}
+
+.stash_item_list .r .seo_share_link {
+	/*position: absolute; left: 20px; top: 20px;*/
+	display: inline-block;
+	margin-top: 17px;
+}
+.stash_item_list .r .seo_share_link > a {
+	display: block;
+	text-align: center;
+}
+.stash_item_list .r > .info > .number_of_comments {
+	position: absolute; top: 30px; left: 80px;
+	color: #aaa;
+	font: normal 11px IRANSans;
+}
+.stash_item_list .r > .info > .number_of_comments:hover {
+	color: #BD3559;
+}
+
+.stash_item_list .r .upvote_form {
+	margin-top: 40px;
+}
+
+.stash_item_list .notfound {
+	margin: 80px 50px;
+}
+
+.stash_item_list .r.pin {
+	background-color: #FFF9E8;
+	background-image: url('image_list/special-item.png');
+}
+.stash_item_list .r.pin:before {
+	content: "Sponsored";
+	font: normal 14px monospace,sans-serif;
+	position: absolute; bottom: 20px; left: 20px;
+}
+

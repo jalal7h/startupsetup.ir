@@ -1,0 +1,26 @@
+
+.stash_cats_list {
+	width: 100%;
+	text-align: center;
+	margin: 50px auto;
+}
+.stash_cats_list > a {
+	display: inline-block;
+	width: 19%;
+	margin: 50px 0;
+	text-align: center;
+	opacity: 0.65;
+	transition: all 0.2s;
+}
+.stash_cats_list > a:hover {
+	opacity: 1.0;
+}
+.stash_cats_list > a > img {
+	width: 100px;
+	height: 100px;
+}
+.stash_cats_list > a > div {
+	color: white;
+	font: normal 12px IRANSans;
+	padding-top: 10px;
+}

@@ -1,0 +1,98 @@
+
+/*index*/
+
+.header_links {
+	position: absolute;
+	z-index: 102;
+	top: 30px;
+	right: 30px;
+	direction: rtl;
+}
+
+.header_links > a {
+	position: relative;
+	display: inline-block;
+}
+
+#hml_register ,
+#hml_login ,
+#hml_userpanel ,
+#header_search_form input {
+	padding: 8px 20px;
+	background-color: rgba(255,255,255, 0.2);
+	border-radius: 15px;
+	color: white;
+	font: normal 11px IRANSans;
+	cursor: pointer;
+	width: auto;
+	border: 0px;
+}
+
+#hml_register:hover ,
+#hml_login:hover ,
+#hml_userpanel:hover ,
+#header_search_form input:hover {
+	background-color: rgba(255,255,255, 0.3);
+}
+
+#hml_register {
+	margin: 6px 0px 0px 2px;
+}
+#hml_login {
+	margin: 6px 0px 0px 0px;
+}
+#hml_userpanel {
+	margin: 6px 0px 0px 0px;
+	width: 147px;
+	text-align: center;
+	display: none;
+}
+
+.header_links_user_logged1 #hml_register ,
+.header_links_user_logged1 #hml_login {
+	display: none;
+}
+.header_links_user_logged1 #hml_userpanel {
+	display: inline-block;
+}	
+
+
+
+
+#header_search_form {
+	
+}
+
+#header_search_form input {
+	cursor: text;
+	width: 147px;
+	/*border-radius: 15px 15px 5px 5px;*/
+}
+
+/* do not group these rules */
+#header_search_form input::-webkit-input-placeholder {
+    color: white;
+}
+#header_search_form input:-moz-placeholder {
+    /* FF 4-18 */
+    color: white;
+}
+#header_search_form input::-moz-placeholder {
+    /* FF 19+ */
+    color: white;
+}
+#header_search_form input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+

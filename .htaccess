@@ -1,0 +1,51 @@
+RewriteEngine On
+
+# 
+# captcha-1
+RewriteRule ^captcha-(.*)\.png(.*)$ ./?do_action=captcha_build&captcha_name=$1 [L]
+
+# 
+# main-2
+RewriteRule ^resize/([0-9]+)x([0-9]+)/(.*)$ ./?do_action=quick_resize&width=$1&height=$2&address=$3 [L]
+RewriteRule ^scripts.js$ ./?do_action=include_all_js [L]
+RewriteRule ^scripts-admin.js$ ./?do_action=include_all_js&page=admin [L]
+RewriteRule ^styles.css$ ./?do_action=include_all_css [L]
+RewriteRule ^styles-admin.css$ ./?do_action=include_all_css&page=admin [L]
+RewriteRule ^about$ ./?page=3 [L]
+RewriteRule ^terms$ ./?page=6 [L]
+RewriteRule ^help$ ./?page=4 [L]
+RewriteRule ^privacy$ ./?page=7 [L]
+RewriteRule ^admin$ /?page=admin [R]
+RewriteRule ^image_list/(.*)$ ./?do_action=imgp_echo&filename=$1 [L]
+
+# 
+# newsletter-1
+RewriteRule ^newsletter-email-list.txt$ ./?do_action=nl_management_emailList_download [L]
+
+# 
+# seo-2
+RewriteRule ^sitemap.xml$ ./?do_action=seo_sitemap [L]
+RewriteRule ^rss/([a-zA-Z0-9]+)\.xml$ ./?do_action=seo_rss&feed=$1 [L]
+
+# 
+# stash
+RewriteRule ^cat-([0-9]+)-([0-9]+)-(.*).html$ ./?page=101&id=$1&p=$2 [L]
+RewriteRule ^cat-([0-9]+)-(.*).html$ ./?page=101&id=$1 [L]
+RewriteRule ^item-([0-9]+)-(.*).html$ ./?page=102&id=$1 [L]
+RewriteRule ^tag/(.*)$ ./?page=103&q=$1 [L]
+
+# 
+# userpanel-2
+RewriteRule ^userpanel$ ./?page=14 [L]
+
+# 
+# userprofile-1
+RewriteRule ^@([0-9]+)$ ./?page=19&id=$1 [L]
+
+# 
+# users-1
+RewriteRule ^register$ ./?page=58 [L]
+RewriteRule ^register_do$ ./?page=59 [L]
+RewriteRule ^login$ ./?page=60 [L]
+RewriteRule ^forgot$ ./?page=63 [L]
+

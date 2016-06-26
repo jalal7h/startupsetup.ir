@@ -1,0 +1,30 @@
+﻿
+<div class="header_links header_links_user_logged{user_logged}">
+	
+	<form id="header_search_form">
+		<input rel="{_URL}" type="text" name="q" value="{q}" placeholder="جستجو ..." dir="rtl" >
+	</form>
+
+	<a id="hml_register" href="{_URL}/register" >ثبت نام</a>
+	<a id="hml_login" href="{_URL}/login" >ورود</a>
+	<a id="hml_userpanel" href="{_URL}/userpanel" >محیط کاربری</a>
+
+
+</div>
+
+<div class="logo-c">
+	<a href="{_URL}" class="logo" ><img src="{_URL}/{tab__temp('logo')}" /></a>
+</div>
+
+<div id="hml_plus" >
+	<span>{plus_footer_title}</span>
+	<icon></icon>
+</div>
+<script type="text/javascript">
+	$(document).ready(function($) {
+		if( '{$_REQUEST['id']}'!='' ){
+			$('#hml_plus').hide();
+		}
+	});
+</script>
+
