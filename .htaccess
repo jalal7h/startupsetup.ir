@@ -1,6 +1,10 @@
 RewriteEngine On
 # AddType application/x-httpd-php54 .php
 
+<FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif|html|htm|xml|txt|xsl)$">
+Header set Cache-Control "max-age=31536050"
+</FilesMatch>
+
 # 
 # captcha-1
 RewriteRule ^captcha-(.*)\.png(.*)$ ./?do_action=captcha_build&captcha_name=$1 [L]
