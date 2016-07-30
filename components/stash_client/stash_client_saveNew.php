@@ -11,7 +11,7 @@ function stash_client_saveNew(){
 		}
 	}
 
-	if(! $id = dbs( 'item' , ['name','memo','brief','cat_id','desc','email','website','website_name','kw','user_id'=>$_SESSION['uid'],'filter_money','filter_lang','filter_platform','date'=>U()] ) ){
+	if(! $id = dbs( 'item' , ['name','memo','brief','cat_id','desc','email','website','website_name','kw','user_id'=>$_SESSION['uid'],'filter_money','filter_lang','filter_platform','date'=>U(), 'sponsor_id'] ) ){
 		e(__FUNCTION__ , __LINE__, dbe() );
 
 	} else {

@@ -24,6 +24,8 @@ function stash_client_saveEdit(){
 		`website`='".$_REQUEST['website']."', 
 		`website_name`='".$_REQUEST['website_name']."', 
 
+		`sponsor_id`='".$_REQUEST['sponsor_id']."', 
+
 		`filter_money`='".$_REQUEST['filter_money']."', 
 		`filter_lang`='".$_REQUEST['filter_lang']."', 
 		`filter_platform`='".$_REQUEST['filter_platform']."', 

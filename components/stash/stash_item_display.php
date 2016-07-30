@@ -8,6 +8,7 @@ function stash_item_display(){
 	if(! $item_id = $_REQUEST['id'] ){
 		e( __FUNCTION__ , __LINE__ );
 		return false;
+	
 	} else if(! $rw_item = table("item", $item_id)){
 		e( __FUNCTION__ , __LINE__ );		
 		return false;

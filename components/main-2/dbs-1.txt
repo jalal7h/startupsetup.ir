@@ -1,18 +1,17 @@
 
 
 # jalal7h@gmail.com
-# 2016/06/10
-# Version 1.8
+# 2016/07/13
+# Version 1.11
 
 /*
-
 	
 	#
 	# insert
-	$id = dbs("session", 
+	$id = dbs( "session", 
 		['name','text','approach','publisher','reflection','clock','date','date_created'=>date('U'),'state','university','address','film','flag'=>1] );
 	#
-
+	
 	#
 	# upload photo
 	listmaker_fileupload( 'session', $id, "*" );
