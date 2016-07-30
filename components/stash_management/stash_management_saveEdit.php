@@ -31,6 +31,8 @@ function stash_management_saveEdit(){
 		`filter_platform`='".$_REQUEST['filter_platform']."', 
 		`filter_lang`='".$_REQUEST['filter_lang']."', 
 
+		`sponsor_id`='".$_REQUEST['sponsor_id']."', 
+
 		`kw`='".$_REQUEST['kw']."'
 		
 		".( $stash_icon[0] ? " , `stash_icon`='".$stash_icon[0]."' " : "")."

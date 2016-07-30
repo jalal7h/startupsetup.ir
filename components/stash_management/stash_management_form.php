@@ -37,7 +37,7 @@ function stash_management_form(){
 		'<hr>',
 
 		['select:cat_id', 'option'=>cat_display('cat') , 'inDiv'],
-		['select:sponsor_id'=>$rw , 'option'=>listmaker_option("users",$condition=" AND `permission`<2 ",$returnArray=true) , 'inDiv'],
+		['select:sponsor_id'=>$rw['sponsor_id'] , 'option'=>listmaker_option("users",$condition=" AND `permission`<2 ",$returnArray=true) , 'inDiv'],
 
 		['text:memo', 'inDiv'],
 		['text:kw', 'inDiv'],

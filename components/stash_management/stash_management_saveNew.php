@@ -10,7 +10,7 @@ function stash_management_saveNew(){
 
 	$_REQUEST['pin'] = str_replace( array(",","\n","\r\n") , "،" , $_REQUEST['pin'] );
 
-	if(! $id = dbs( 'item', ['name','memo','brief','cat_id','desc','email','website','website_name','kw','flag'=>'1','user_id'=>$_SESSION['uid'],'pin','filter_money','filter_platform','filter_lang','date'=>U(),'notification_sent'=>'1'] ) ){
+	if(! $id = dbs( 'item', ['name','memo','brief','cat_id','desc','email','website','website_name','kw','flag'=>'1','user_id'=>$_SESSION['uid'],'pin','filter_money','filter_platform','filter_lang','date'=>U(),'notification_sent'=>'1','sponsor_id'] ) ){
 		e(__FUNCTION__ , __LINE__);
 
 	} else {
