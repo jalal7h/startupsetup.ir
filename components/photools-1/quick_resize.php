@@ -66,8 +66,8 @@ function multi_size_pic($file_name, $nWD, $nHT){
 		header("Content-disposition: inline; filename=$file_name");
 		header('Content-Type: image/'.substr($ext, 1));
 		$expires = 60 * 60 * 24 * 30;
-		$exp_gmt = gmdate("D, d M Y H:i:s", time() + $expires )." GMT";
-		$mod_gmt = gmdate("D, d M Y H:i:s", time() + (3600 * -5 * 24 * 365) )." GMT";
+		$exp_gmt = gmdate("D, d M Y H:i:s", U() + $expires )." GMT";
+		$mod_gmt = gmdate("D, d M Y H:i:s", U() + (3600 * -5 * 24 * 365) )." GMT";
 		@header("Expires: {$exp_gmt}");
 		@header("Last-Modified: {$mod_gmt}");
 		@header("Cache-Control: public, max-age={$expires}");

@@ -2,29 +2,13 @@
 
 function users_forgot_send(){
 	
-	$email = $_REQUEST['username'];
-	$h = sha1($email."01q!");
-	$link = _URL."/?page=".$_REQUEST['page']."&do=new&email=".$email."&h=".$h;
+	$username = $_REQUEST['username'];
+	$h = md5x($username."01q!", 20);
+
+	$vars['email'] = $username;
+	$vars['link'] = _URL."/?page=".$_REQUEST['page']."&do=new&username=".$username."&h=".$h;
 	
-	echo "
-	<div style='width: 70%; margin: 120px auto 120px auto;' class='convbox' id='users_forgot_send_convbox'>لینک تنظیم مجدد کلمه عبور به آدرس ایمیل \"$email\" ارسال شد.<br>لطفا با باز کردن لینک فرم مربوطه را تکمیل نمایید.</div>
-	
-	<script>
-		$(document).ready(function(){
-			$('#users_forgot_send_convbox').parent().css({'padding':'1px'});
-		})
-	</script>";
+	echo texty( 'users_forgot_send', $vars );
 
-	$subj = "درخواست کلمه عبور جدید!";
-	$text = "سلام,
-
-	با توجه به درخواست شما برای ثبت کلمه عبور جدید ، ما یک پیوند برای تنظیم مجدد کلمه عبور به آدرس ایمیل شما ارسال نمودیم.
-	لینک : 
-	$link
-
-با تشکر";
-	$head = "\"noreply\" <noreply@".str_replace("www.","",$_SERVER['SERVER_NAME']).">\r\n";
-
-	mail($email, $subj, $text, $head);
 }
 

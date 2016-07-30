@@ -1,5 +1,9 @@
 <?
 
+# jalal7h@gmail.com
+# 2016/07/09
+# 1.2
+
 function users_register_do(){
 	
 	if(!$username = strtolower(trim($_REQUEST['username']))){
@@ -15,9 +19,14 @@ function users_register_do(){
 		die();
 	}
 
+	if( hash_password ){
+		$raw_password = $password;
+		$password = md5x( $password, 20 );
+	}
+
 	$cell = trim($_REQUEST['cell']);
 
-	if($_SESSION['uid']){
+	if( user_logged() ){
 		?>
 		<script>location.href = '<?=_URL?>/userpanel';</script>
 		<?
@@ -34,26 +43,21 @@ function users_register_do(){
 	
 	} else {
 
-		#
-		# sending email to client after registration
-		if( is_component("texty") ){
-			texty_msg( $username , "users_register_do_msg" , array(
-				"main_title"=>tab__temp("main_title"),
-				"user_name"=>$name,
-				"username"=>$username,
-				"password"=>$password,
-				"_URL"=>_URL,
-			) );
-		}
-		
-		#
-		# congragulating cient
-		echo template_engine("users_register_do");
-
 		# 
 		# loging in client
 		$_SESSION['uid'] = table("users", $username, "id", "username");
 
+		#
+		# sending email to client after registration
+		if( is_component('texty') ){
+			
+			$vars['main_title'] = setting('main_title');
+			$vars['password'] = $raw_password;
+
+			echo texty( 'users_register_do' , $vars );
+			
+		}
+		
 		return true;
 	}
 

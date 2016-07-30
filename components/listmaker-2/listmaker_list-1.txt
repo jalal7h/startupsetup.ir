@@ -1,8 +1,8 @@
 
 
 # jalal7h@gmail.com
-# 2016/06/25
-# Version 1.22
+# 2016/07/29
+# 1.25
 
 /*
 	
@@ -11,8 +11,9 @@
 
 	# 
 	# the list
-	$list['name'] = 'linkify_mg_list';
-	$list['query'] = " SELECT * FROM `linkify` WHERE 1 AND `parent`='$parent' ORDER BY `prio` ASC ";
+	$table = 'item';
+	$list['name'] = __FUNCION__;
+	$list['query'] = " SELECT * FROM `$table` WHERE 1 AND `parent`='$parent' ORDER BY `prio` ASC ";
 	$list['tdd'] = 10; // tedad dar safhe
 	
 	#
@@ -29,7 +30,9 @@
 	# ** mitunim link ham bedim bejaye 'true'
 	# ** ama age base_url ro dashte bashim az hamun estefade mikone
 	#
-	$list['modify_url'] = true; // link icon modify
+	$list['modify_url'] = true; // link icon modify 
+	or $list['modify_url_inBlank'] = true; // this will open in new tab
+
 	$list['addnew_url'] = false; // link icon "new" vaghti ke list khali hast dide mishe
 	$list['remove_url'] = true; // link dokme hazf
 	$list['up_or_down'] = true; // link priority
@@ -38,13 +41,13 @@
 	
 	#
 	# list array // list e sotun haye list
-	$list['list_array'][] = array( "head"=>lmtc("linkify:pic") , "tag"=>"th", "picture" => '$rw[\'pic\']');
-	$list['list_array'][] = array("head"=>lmtc("linkify:name"), "content" => '$rw[\'name\']');
-	$list['list_array'][] = array("head"=>lmtc("linkify:url"), "content" => '$rw[\'url\']');
+	$list['list_array'][] = array( "head"=>lmtc($table.":pic") , "tag"=>"th", "picture" => '$rw[\'pic\']');
+	$list['list_array'][] = array("head"=>lmtc($table.":name"), "content" => '$rw[\'name\']');
+	$list['list_array'][] = array("head"=>lmtc($table.":url"), "content" => '$rw[\'url\']');
 
 	#
 	# search columns // az in field ha tu table search mikone
-	$list['search'] = array("name","url");
+	$list['search'] = [ "name", "text", "users(user_id)[username]", "users(user_id)[name]" ]; jai ke name moshabehe q hast, id sho az users miare beyne user_id haye table ma peyda mikone
 
 	#
 	# paging select
@@ -56,7 +59,7 @@
 		
 	);
 	
-	$list['linkTo'][] = [
+	$list['linkTo']['some_name_for_a_tag'] = [
 		'url' => '_URL."/?page=".$_REQUEST["page"]."&cp=".$_REQUEST["cp"]."&func=tour_management_list&p=".$_REQUEST["p"]."&do=setHotel&id=".$rw["id"]',
 		'icon' => '021',
 		'name' => 'بروزرسانی',
@@ -146,6 +149,8 @@ $list['tdd'] = 12;
 // lit e sotun hai ke bauat tush search beshe ro inja miarim
 // va balaye list ye form e search miare
 	$list['search'] = array("name");
+	
+	$list['tr_class'] = 'someclassfunc($rw)',
 
 //echo mikone ...
 	echo listmaker_list($list);

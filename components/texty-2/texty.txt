@@ -1,0 +1,12 @@
+
+
+# jalal7h@gmail.com
+# 2016/07/08
+# Version 2.1
+
+# get or put template content
+# something like tab__temp, but only for message templates
+# 
+# $subject = texty( $template_name )[0];
+# $content = texty( $template_name )[1];
+

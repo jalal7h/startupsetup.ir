@@ -3,10 +3,12 @@ $GLOBALS['block_layers']['userpanel_menu'] = 'منوی کاربری';
 
 function userpanel_menu(){
 	
-	if(! $user_id = $_SESSION['uid'] ){
+	if(! $user_id = user_logged() ){
 		return true;
+	
 	} else if(! $rw = table("users",$user_id) ){
 		return false;
+	
 	} else if( $_REQUEST['page']!=14 ){
 		return true;
 	}

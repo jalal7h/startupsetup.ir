@@ -15,7 +15,7 @@ function users_weblogin_do(){
 	}
 
 	$username = strtolower(trim( $auth->email ));
-	$password = substr( md5( date("U").$auth->email ), 4, 16 );
+	$password = substr( md5( U().$auth->email ), 4, 16 );
 	
 	if(! $name = trim($auth->name) ){
 		$name = trim($auth->firstname)." ".trim($auth->lastname);
@@ -63,18 +63,23 @@ function users_weblogin_do(){
 			e( __FUNCTION__, __LINE__, dbe() );
 			var_dump($auth);
 			die();
+		
 		} else {
 
 			#
 			# sending email to client after registration
-			if( function_exists("texty_msg") ){
-				texty_msg( $username , "users_register_do_msg" , array(
+			if( is_component('texty') ){
+
+				$vars = array(
 					"main_title"=>tab__temp("main_title"),
 					"user_name"=>$name,
 					"username"=>$username,
 					"password"=>$password,
 					"_URL"=>_URL,
-				) );
+				);
+
+				echo texty( "users_register_do" , $vars, $username );
+
 			}
 			
 			#

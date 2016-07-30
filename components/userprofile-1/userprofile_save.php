@@ -1,14 +1,19 @@
 <?
 
 function userprofile_save(){
-	if(!$uid = $_SESSION['uid']){
+	
+	if(! $uid = user_logged() ){
 		$prompt = "error on ".__LINE__;
-	} else if(!$rw = table("users", $uid)){
+	
+	} else if(! $rw = table("users", $uid)){
 		$prompt = "error on ".__LINE__;
-	} else if(!$name = trim(strip_tags($_REQUEST['name'])) ){
+	
+	} else if(! $name = trim(strip_tags($_REQUEST['name'])) ){
 		$prompt = "لطفا نام خود را به درستی وارد کنید!";
-	} else if(!$username = trim(strip_tags($_REQUEST['username'])) ){
+	
+	} else if(! $username = trim(strip_tags($_REQUEST['username'])) ){
 		$prompt = "لطفا آدرس ایمیل خود را به درستی وارد کنید!";
+	
 	} else {
 		
 		$tell = trim(strip_tags($_REQUEST['tell']));
@@ -41,7 +46,9 @@ function userprofile_save(){
 			dbs("users", array("profile_pic"=>$profile_pic[0]) , array("id"=>$uid) );
 		}
 	}
+
 	echo "<div style='width: 70%; margin: 100px auto 110px auto;' class='convbox'>$prompt</div>";
+	
 }
 
 

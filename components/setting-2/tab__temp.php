@@ -1,11 +1,14 @@
 <?
 
 function tab__temp($key='', $insert=false, $val=NULL){
-	if(!$key){
+	
+	if(! $key ){
 		return false;
 	}
-	if($insert==true){
-		if(!$res=dbq(" update `_temp` set `_val`='$val' where `_key`='$key' limit 1 ")){
+
+	if( $insert==true ){
+		
+		if(! $res=dbq(" UPDATE `_temp` set `_val`='$val' where `_key`='$key' limit 1 ") ){
 			;// do nothing
 		}
 	}

@@ -1,7 +1,12 @@
 
-// 2016/06/25
+// 2016/06/28
 
 function lmfetc_load( lmfetc_rahem, select_value ){
+
+	// extra before
+	if(typeof lmfetc_extra_before == 'function') { 
+		lmfetc_extra_before( select_value );
+	}
 
 	// vars
 	cat_name = lmfetc_rahem.closest('.lmfetc_container').attr('rel_cat_name');
@@ -44,6 +49,11 @@ function lmfetc_load( lmfetc_rahem, select_value ){
 	// catcustomfield console
 	if(typeof catcustomfield_console == 'function') { 
 		catcustomfield_console( cat_name, parent /* as cat_id */ ); 
+	}
+
+	// extra after
+	if(typeof lmfetc_extra_after == 'function') { 
+		lmfetc_extra_after( select_value );
 	}
 
 }

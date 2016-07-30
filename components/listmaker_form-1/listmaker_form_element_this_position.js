@@ -1,5 +1,12 @@
 
+// 2016/06/28
+
 function lmfetp( parent, le_paluet, hidden_input_id, value_serial ) {
+
+	// extra before
+	if(typeof lmfetp_extra_before == 'function') { 
+		lmfetp_extra_before( parent );
+	}
 
 	cl( parent +' / '+ le_paluet +' / '+ hidden_input_id +' / '+ value_serial );
 
@@ -17,6 +24,11 @@ function lmfetp( parent, le_paluet, hidden_input_id, value_serial ) {
 	}
 
 	wget( urlpath, le_paluet, pars );
+
+	// extra after
+	if(typeof lmfetp_extra_after == 'function') { 
+		lmfetp_extra_after( parent );
+	}
 
 }
 

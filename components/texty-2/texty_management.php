@@ -1,10 +1,11 @@
 <?
 
 # jalal7h@gmail.com
-# 2016/05/21
-# Version 2.0
+# 2016/07/09
+# Version 2.1
 
 $GLOBALS['cmp']['texty_management'] = 'پیام های پیشفرض';
+$GLOBALS['cmp-icon']['texty_management'] = '071';
 
 function texty_management(){
 	
@@ -23,14 +24,17 @@ function texty_management(){
 	?>
 	<form method="post" class="texty_management" action="./?page=admin&cp=<?=$_REQUEST['cp']?>&do=save">
 	<?
-	if(!$rs = dbq(" SELECT * FROM `texty` WHERE 1 ")){
+	
+	if(!$rs = dbq(" SELECT * FROM `texty` WHERE 1 ORDER BY `name` ")){
 		e(__FUNCTION__.__LINE__);
+	
 	} else if(!dbn($rs)){
-		;//
-	} else while($rw = dbf($rs)){
+		//
+	
+	} else while( $rw = dbf($rs) ){
 		?>
 		<div class="r">
-			<div class="name"><?=$rw['name_fa']?> ..</div>
+			<div class="name" title="<?=$rw['name']?>"><?=$rw['name_fa']?> ..</div>
 			<input type="text" placeholder="عنوان ..." name="title[<?=$rw['id']?>]" value="<?=$rw['title']?>" />
 			<textarea placeholder="متن ..." name="content[<?=$rw['id']?>]"><?=$rw['content']?></textarea>
 		</div>
@@ -56,6 +60,10 @@ function texty_management_save(){
 		dbq(" UPDATE `texty` SET `title`='$title', `content`='$content' WHERE `id`='$id' LIMIT 1 ");
 	}
 }
+
+
+
+
 
 
 

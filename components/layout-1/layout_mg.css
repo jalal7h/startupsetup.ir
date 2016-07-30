@@ -70,7 +70,7 @@
 
 
 .layout_mg > .this > .the_layers {
-	min-width: calc( 70% - 90px );
+	min-width: calc( 70% - 110px );
 	margin: auto;
 }
 

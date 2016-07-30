@@ -3,7 +3,7 @@ $GLOBALS['do_action'][] = 'upvote_do';
 
 function upvote_do(){
 	
-	if(! $user_id = $_SESSION['uid'] ){
+	if(! $user_id = user_logged() ){
 		e( __FUNCTION__ , __LINE__ );		
 	
 	} else if(! $table = $_REQUEST['table'] ){

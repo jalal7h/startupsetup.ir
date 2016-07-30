@@ -15,10 +15,11 @@ function upvote_form( $table_name , $table_id=null ){
 	
 	if(! $rs = dbq(" SELECT COUNT(*) FROM `upvote` WHERE `table_name`='".$table_name."' AND `table_id`='".$table_id."' ") ){
 		e( __FUNCTION__ , __LINE__ );
+	
 	} else {
 		$numb = dbr($rs, 0, 0);
 
-		if(! $user_id = $_SESSION['uid'] ){
+		if(! $user_id = user_logged() ){
 			;//
 		} else if(! $rs2 = dbq(" SELECT COUNT(*) FROM `upvote` WHERE `table_name`='".$table_name."' AND `table_id`='".$table_id."' AND `user_id`='".$user_id."' ") ){
 			e( __FUNCTION__ , __LINE__ );

@@ -3,11 +3,14 @@
 // $_SESSION['uid'] = null;
 
 function users_headerLoginIcon(){
-	if($uid = $_SESSION['uid']){
+	
+	if( $uid = user_logged() ){
+		
 		if(!$rw = table("users", $uid)){
 			e("err - users_headerLoginIcon - ".__LINE__);
 			// die();
 		}
+
 		$c.= '
 		<div class="users_headerLoginIcon">
 			<a href="./login" class="box">
@@ -23,6 +26,7 @@ function users_headerLoginIcon(){
 			 	</div>'
 		 		:'').'
 		</div>';
+		
 	} else {
 		$c.= '
 		<div class="users_headerLoginIcon">

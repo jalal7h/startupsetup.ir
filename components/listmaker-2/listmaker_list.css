@@ -1,5 +1,5 @@
 
-/*2016/06/20*/
+/*2016/07/13*/
 
 .listmaker_list {
 	direction:rtl;
@@ -27,6 +27,7 @@
 .listmaker_list_record td:last-child {
 	border-left:1px solid #eee;
 /*	text-align:center;*/
+	cursor: default;
 }
 .listmaker_list-no-record-found {
 	direction:rtl;
@@ -75,7 +76,7 @@
     /* box-shadow: 0 0 10px #ccc; */
     opacity: 0.6;
     margin: 2px 3px;
-    float: left;
+    float: right;
     border-radius: 5px;
     min-width: 21px;
 }
@@ -85,7 +86,7 @@
 
 .listmaker_list_record .tools-td a.up:before ,
 .listmaker_list_record .tools-td a.down:before {
-    float: left;
+    float: right;
     padding: 3px 8px;
     background-color: #eee;
     color: #444;
@@ -94,10 +95,14 @@
     position: relative; top: 3px;
 }
 .listmaker_list_record .tools-td a.up:before {
+	font-family: FontAwesome;
     content: "\f0d8";
+    font-size: 13px;
 }
 .listmaker_list_record .tools-td a.down:before {
+	font-family: FontAwesome;
     content: "\f0d7";
+    font-size: 13px;
 }
 .listmaker_list_record .tools-td a.up:hover:before ,
 .listmaker_list_record .tools-td a.down:hover:before {
@@ -142,7 +147,7 @@
 
 /* remove */
 .listmaker_list_record .remove:before {
-	float: left;
+	float: right;
 	font: normal 30px FontAwesome;
 	color: red;
 	opacity: 0.6;
@@ -156,7 +161,7 @@
 
 /* modify */
 .listmaker_list_record .modify:before {
-	float: left;
+	float: right;
 	font: normal 30px FontAwesome;
 	color: green;
 	opacity: 0.6;
@@ -234,13 +239,16 @@
 
 .listmaker_list_form {
 	position: relative;
+	text-align: left;
 }
 .listmaker_list_form .list_addnew_url {
-	position: absolute;
+	position: relative;
 	left: 6px;
-    top: -60px;
+    top: 0px;
 }
 
-
+iframe[name="_hidden"] {
+	display: none;
+}
 
 
